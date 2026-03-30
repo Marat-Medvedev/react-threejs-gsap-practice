@@ -3,6 +3,7 @@ import useMacbookStore from '../store';
 import { Canvas } from '@react-three/fiber';
 import { Box, OrbitControls } from '@react-three/drei';
 import MacbookModel14 from './models/Macbook-14';
+import StudioLights from './StudioLights';
 
 const ProductViewer = () => {
     const { color, scale, setColor, setScale } = useMacbookStore();
@@ -53,7 +54,7 @@ const ProductViewer = () => {
                 id="canvas"
                 camera={{ fov: 50, near: 0.1, far: 1000, position: [0, 2, 5] }}
             >
-                <ambientLight intensity={1} />
+                <StudioLights />
 
                 <MacbookModel14
                     scale={0.06}
