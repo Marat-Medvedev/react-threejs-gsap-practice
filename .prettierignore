@@ -1,0 +1,28 @@
+# Dependencies
+node_modules
+
+# Build outputs / generated
+dist
+dist-ssr
+build
+coverage
+.nyc_output
+
+# Caches
+.vite
+.cache
+
+# OS/editor junk
+.DS_Store
+
+# Lockfiles (avoid churn)
+package-lock.json
+
+# Minified / bundled artifacts
+*.min.js
+*.min.css
+*.bundle.js
+*.bundle.css
+
+# Static assets (images/videos/models) - keep as-is
+public/
